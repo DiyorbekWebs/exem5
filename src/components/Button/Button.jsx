@@ -1,9 +1,22 @@
-import React from "react"
-import stil from './button.module.scss';
-export default function Button({className,type='button', id, style, onclick,children}) {
+import React from "react";
+export default function Button({
+  clasS,
+  type = "button",
+  id,
+  style,
+  onclick,
+  children,
+}) {
+  console.log(clasS);
   return (
-    <button className={stil.button} type={type} id={id} style={style} onClick={onclick}>
+    <button
+      className={clasS}
+      type={type}
+      id={id}
+      style={style}
+      onClick={onclick}
+    >
       {children}
     </button>
-  )
+  );
 }

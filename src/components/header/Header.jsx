@@ -2,7 +2,6 @@ import React from "react";
 import { Sling as Hamburger } from "hamburger-react";
 import {
   AiOutlineHeart,
-  BsBag,
   BsSearch,
   BsShuffle,
 } from "../../assets/icons/icon";
@@ -11,10 +10,18 @@ import style from "./header.module.scss";
 import List from "./list";
 import WishlistModal from "./modal/modal";
 import useModal from "../../hooks/useModal";
+import CartModal from "./modal/Cart/Cart";
+import Responsive from "./modal/ResponsiveModal/Responsive.jsx";
 // import HeaderModal from "./modal/headerModal";
 
 export default function Header() {
   const { isOpen, openModal, closeModal } = useModal();
+  const {
+    isOpen: second,
+    openModal: secondModal,
+    closeModal: closedModal,
+  } = useModal();
+
   return (
     <>
       <div className="container">
@@ -33,11 +40,18 @@ export default function Header() {
                 onClick={() => openModal()}
               />
               {isOpen ? <WishlistModal props={closeModal} /> : ""}
-              <BsBag className={style.header__icon} />
+              <CartModal />
             </ul>
-            <div className={style.header__burger}>
-              <Hamburger rounded size={25} direction={"left"} duration={1} />
+            <div
+              className={style.header__burger}
+              onClick={() => {
+                secondModal();
+                console.log(second);
+              }}
+            >
+              <Hamburger toggled={second} toggle={secondModal} rounded size={25} direction={"left"} duration={1} />
             </div>
+            {second ? <Responsive props={closedModal}/> : ""}
           </div>
         </nav>
       </div>

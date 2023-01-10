@@ -8,7 +8,7 @@ export default function List() {
         Home <IoIosArrowDown style={{ fontSize: "14px" }} />
         <div className={style.header__homeDrop}>
           <div
-            className={style.header_homeItem}
+            className={style.header__homeItem}
             style={{
               padding: "10px",
               border: "1px solid transparent",
@@ -17,7 +17,7 @@ export default function List() {
           >
             <p className={style.header__item}>Home 1</p>
           </div>
-          <div className={style.header_homeItem} style={{ padding: "10px" }}>
+          <div className={style.header__homeItem} style={{ padding: "10px" }}>
             <p className={style.header__item}>Home 2</p>
           </div>
         </div>
@@ -26,7 +26,7 @@ export default function List() {
         Shop <IoIosArrowDown style={{ fontSize: "14px" }} />
         <div className={style.header__homeDrop}>
           <div
-            className={style.header_homeItem}
+            className={style.header__homeItem}
             style={{
               padding: "10px",
               border: "1px solid transparent",
@@ -36,7 +36,7 @@ export default function List() {
             <p className={style.header__item}>About Page</p>
           </div>
           <div
-            className={style.header_homeItem}
+            className={style.header__homeItem}
             style={{
               padding: "10px",
               border: "1px solid transparent",
@@ -46,7 +46,7 @@ export default function List() {
             <p className={style.header__item}>Card Page</p>
           </div>
           <div
-            className={style.header_homeItem}
+            className={style.header__homeItem}
             style={{
               padding: "10px",
               border: "1px solid transparent",
@@ -56,7 +56,7 @@ export default function List() {
             <p className={style.header__item}>Chekout Page</p>
           </div>
           <div
-            className={style.header_homeItem}
+            className={style.header__homeItem}
             style={{
               padding: "10px",
               border: "1px solid transparent",
@@ -65,7 +65,7 @@ export default function List() {
           >
             <p className={style.header__item}>Register Page</p>
           </div>
-          <div className={style.header_homeItem} style={{ padding: "10px" }}>
+          <div className={style.header__homeItem} style={{ padding: "10px" }}>
             <p className={style.header__item}>Account Page</p>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function List() {
         <IoIosArrowDown style={{ fontSize: "14px" }} />
         <div className={style.header__homeDrop}>
           <div
-            className={style.header_homeItem}
+            className={style.header__homeItem}
             style={{
               padding: "10px",
               border: "1px solid transparent",
@@ -85,7 +85,7 @@ export default function List() {
             <p className={style.header__item}>About Page</p>
           </div>
           <div
-            className={style.header_homeItem}
+            className={style.header__homeItem}
             style={{
               padding: "10px",
               border: "1px solid transparent",
@@ -95,7 +95,7 @@ export default function List() {
             <p className={style.header__item}>Card Page</p>
           </div>
           <div
-            className={style.header_homeItem}
+            className={style.header__homeItem}
             style={{
               padding: "10px",
               border: "1px solid transparent",
@@ -105,7 +105,7 @@ export default function List() {
             <p className={style.header__item}>Chekout Page</p>
           </div>
           <div
-            className={style.header_homeItem}
+            className={style.header__homeItem}
             style={{
               padding: "10px",
               border: "1px solid transparent",
@@ -123,7 +123,7 @@ export default function List() {
         Blog <IoIosArrowDown style={{ fontSize: "14px" }} />
         <div className={style.header__homeDrop}>
           <div
-            className={style.header_homeItem}
+            className={style.header__homeItem}
             style={{
               padding: "10px",
               border: "1px solid transparent",
@@ -133,7 +133,7 @@ export default function List() {
             <p className={style.header__item}>Blog Grid</p>
           </div>
           <div
-            className={style.header_homeItem}
+            className={style.header__homeItem}
             style={{
               padding: "10px",
               border: "1px solid transparent",
@@ -143,7 +143,7 @@ export default function List() {
             <p className={style.header__item}>Blog List</p>
           </div>
           <div
-            className={style.header_homeItem}
+            className={style.header__homeItem}
             style={{
               padding: "10px",
             }}

@@ -66,9 +66,17 @@
   &__cardList {
     display: flex;
     flex-direction: column;
-    gap: 10px;  
-    
-}
+    gap: 10px;
+  }
+  &__icon {
+    font-size: 20px;
+    transition: 0.5s;
+
+    &:hover {
+      transition: 0.8s;
+      color: #5a5ac9;
+    }
+  }
 }
 @media screen and (max-width: 1162px) {
   .modal {
@@ -78,31 +86,31 @@
   }
 }
 @media screen and (max-width: 1030px) {
-    .modal {
-      &__box {
-        width: 35%;
-      }
+  .modal {
+    &__box {
+      width: 35%;
     }
   }
-  
-  @media screen and (max-width: 865px) {
-    .modal {
-      &__box {
-        width: 40%;
-      }
+}
+
+@media screen and (max-width: 865px) {
+  .modal {
+    &__box {
+      width: 40%;
     }
   }
-  @media screen and (max-width: 770px) {
-    .modal {
-      &__box {
-        width: 45%;
-      }
+}
+@media screen and (max-width: 770px) {
+  .modal {
+    &__box {
+      width: 45%;
     }
   }
-  @media screen and (max-width: 691px) {
-    .modal {
-      &__box {
-        width: 50%;
-      }
+}
+@media screen and (max-width: 691px) {
+  .modal {
+    &__box {
+      width: 50%;
     }
   }
+}
