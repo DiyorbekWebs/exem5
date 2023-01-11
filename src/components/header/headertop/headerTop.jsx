@@ -4,7 +4,6 @@ import { RxTwitterLogo } from "react-icons/rx";
 import { FiFacebook } from "react-icons/fi";
 import style from "./headerTop.module.scss";
 import { BsTelephoneOutbound } from "react-icons/bs";
-import List from "./headerList";
 const HeaderTop = () => {
   return (
     <div className={style.HeaderTop}>

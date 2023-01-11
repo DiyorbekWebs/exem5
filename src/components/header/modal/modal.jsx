@@ -3,6 +3,7 @@ import stylee from "./modal.module.scss";
 import { CgClose } from "react-icons/cg";
 import ModalCard from "./modalCard";
 import Button from "../../Button/Button";
+import stil from '../../Button/button.module.scss'
 export default function WishlistModal({ props }) {
   console.log(props);
   return (
@@ -18,7 +19,7 @@ export default function WishlistModal({ props }) {
             <ModalCard/>
             <ModalCard/>
           </ul>
-          <Button>view wishlist</Button>
+          <Button clasS={stil.button}>view wishlist</Button>
         </div>
       </div>
     </>
