@@ -22,57 +22,61 @@ li {
   }
 }
 @media screen and (max-width: 1109px) {
-  .container{
+  .container {
     max-width: 1045px;
   }
 }
 @media screen and (max-width: 1066px) {
-  .container{
+  .container {
     max-width: 1000px;
   }
 }
 @media screen and (max-width: 1025px) {
-  .container{
+  .container {
     max-width: 980px;
   }
 }
 @media screen and (max-width: 1008px) {
-  .container{
+  .container {
     max-width: 970px;
   }
 }
 @media screen and (max-width: 890px) {
-  .container{
+  .container {
     max-width: 845px;
   }
 }
 @media screen and (max-width: 835px) {
-  .container{
+  .container {
     max-width: 775px;
   }
 }
 @media screen and (max-width: 770px) {
-  .container{
+  .container {
     max-width: 740px;
   }
 }
 @media screen and (max-width: 431px) {
-  .container{
+  .container {
     max-width: 395px;
   }
 }
 @media screen and (max-width: 391px) {
-  .container{
+  .container {
     max-width: 380px;
   }
 }
 @media screen and (max-width: 376px) {
-  .container{
+  .container {
     max-width: 355px;
   }
 }
 @media screen and (max-width: 360px) {
-  .container{
+  .container {
     max-width: 345px;
   }
+}
+.react-tabs__tab--selected {
+  color: #5a5ac9 !important;
+  text-decoration-line: underline;
 }

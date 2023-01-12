@@ -13,7 +13,14 @@ const shipping4 = require("./shipping2.png");
 const img1 = require("./1.jpg.png");
 const img2 = require("./2.jpg.png");
 const img3 = require("./3.jpg.png");
-const product1 = require("./prd1.png");
+const card1 = require("./card1.png");
+const card2 = require("./card2.png");
+const card3 = require("./card3.png");
+const card4 = require("./card4.png");
+const card5 = require("./card5.webp");
+const mac1 = require("./4.jpg.png");
+const mac2 = require("./6.jpg.png");
+const mac3 = require("./5.jpg.png");
 export {
   Logo,
   facebook,
@@ -30,5 +37,12 @@ export {
   img1,
   img2,
   img3,
-  product1,
+  card1,
+  card2,
+  card3,
+  card4,
+  card5,
+  mac1,
+  mac2,
+  mac3,
 };

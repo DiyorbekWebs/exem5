@@ -23,25 +23,25 @@ const HeaderTop = () => {
           {/* <List/> */}
           <div className={style.HeaderTop__right}>
             <select className={style.HeaderTop__select}>
-              <option className={style.HeaderTop__option} disabled selected>
+              <option className={style.HeaderTop__option} disabled value={'Setting'} >
                 Setting
               </option>
               <option className={style.HeaderTop__option}>Acoount</option>
-              <option className={style.HeaderTop__option} value="">
+              <option className={style.HeaderTop__option} value="CheckOut">
                 CheckOut
               </option>
-              <option className={style.HeaderTop__option} value="">
+              <option className={style.HeaderTop__option} value="SignOut">
                 SignOut
               </option>
             </select>
             <select className={style.HeaderTop__select}>
-              <option className={style.HeaderTop__option} selected>
+              <option className={style.HeaderTop__option} defaultValue>
                 USD $
               </option>
               <option className={style.HeaderTop__option}>Euro</option>
             </select>
             <select className={style.HeaderTop__select}>
-              <option className={style.HeaderTop__option} selected>
+              <option className={style.HeaderTop__option} defaultValue>
                 English
               </option>
               <option className={style.HeaderTop__option}>Fransuz</option>

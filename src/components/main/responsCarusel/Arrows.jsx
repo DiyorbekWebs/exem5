@@ -13,7 +13,7 @@ const Divv = styled.div`
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: 25%;
+  margin-top: 15%;
   margin-right: 1%;
 
   &:hover {
@@ -26,10 +26,11 @@ const Divv = styled.div`
   @media screen and (max-width: 1281px) {
     margin-top: 20%;
   }
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 835px) {
     margin-top: 25%;
+    margin-right: -1%;
   }
-  @media screen and (max-width: 885px) {
+  @media screen and (max-width: 770px) {
     margin-top: 25%;
   }
 `;
@@ -46,8 +47,8 @@ const Divv2 = styled.div`
   z-index: 1;
   top: 0;
   left: 0;
-  margin-top: 25%;
-  margin-left: 1%;
+  margin-top: 15%;
+  margin-left: -1%;
 
   &:hover {
     transition: 0.5s;
@@ -60,11 +61,11 @@ const Divv2 = styled.div`
   @media screen and (max-width: 1281px) {
     margin-top: 20%;
   }
-  @media screen and (max-width: 770px) {
+  
+  @media screen and (max-width: 835px) {
     margin-top: 25%;
   }
-
-  @media screen and (max-width: 885px) {
+  @media screen and (max-width: 770px) {
     margin-top: 25%;
   }
 `;

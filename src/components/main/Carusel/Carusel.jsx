@@ -25,7 +25,7 @@ const Carusel = () => {
       width: 100%;
       height: 600px;
     }
-    @media (max-width: 885px) {
+    @media (max-width: 886px) {
       height: 500px;
     }
     @media (max-width: 430px) {

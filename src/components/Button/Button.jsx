@@ -7,7 +7,6 @@ export default function Button({
   onclick,
   children,
 }) {
-  console.log(clasS);
   return (
     <button
       className={clasS}
