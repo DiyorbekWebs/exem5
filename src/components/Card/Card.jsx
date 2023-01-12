@@ -30,22 +30,40 @@ const Box = styled.div`
     width: 350px;
     margin: 0 auto;
   }
+  @media (max-width: 380px) {
+    width: 330px;
+    margin: 0 auto;
+  }
+  @media (max-width: 361px) {
+    width: 320px;
+    margin: 0 auto;
+  }
 `;
 
 const Img = styled.img`
   height: 300px;
   width: 100%;
+  display: none;
+
   @media (max-width: 1281px) {
     height: 257px;
   }
   @media (max-width: 835px) {
-    height: 240px;
+    height: 200px;
   }
   @media (max-width: 770px) {
     height: 230px;
   }
   @media (max-width: 430px) {
     height: 350px;
+    margin: 0 auto;
+  }
+  @media (max-width: 380px) {
+    height: 340px;
+    margin: 0 auto;
+  }
+  @media (max-width: 3610px) {
+    height: 330px;
     margin: 0 auto;
   }
 `;
@@ -65,7 +83,7 @@ const H1 = styled.h1`
  
 `;
 const Texts = styled.div`
-  padding: 17px 18px 17px 18px;
+  padding: 17px 20px 17px 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { mac1, mac2, mac3 } from "../../../assets/img/img";
 
 const ImgMain = styled.div`
-  padding: 80px 0px 80px 0px;
+  padding: 1200px 0px 80px 0px;
   @media (max-width: 1281px) {
     padding: 30px 0px 50px 0px;
   }

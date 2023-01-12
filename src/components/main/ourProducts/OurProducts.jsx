@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import { Carusel2 } from "../responsCarusel/Carusel";
-
+import { Carusel2, Paad } from "../responsCarusel/Carusel";
+import { Products } from "../../../config/base";
+import Card from "../../Card/Card";
 export const Title = styled.h1`
   font-family: Raleway;
   font-size: 30px;
@@ -88,13 +89,31 @@ export default function OurProduct() {
               <Tabin>upcoming products</Tabin>
             </TabListt>
             <TabPanell>
-              <Carusel2 />
+              <Carusel2>
+                {Products?.map((i) => (
+                  <Paad>
+                    <Card key={i.id} props={i} />
+                  </Paad>
+                ))}
+              </Carusel2>
             </TabPanell>
             <TabPanel>
-              <Carusel2 />
+              <Carusel2>
+                {Products?.map((i) => (
+                  <Paad>
+                    <Card key={i.id} props={i} />
+                  </Paad>
+                ))}
+              </Carusel2>
             </TabPanel>
             <TabPanel>
-              <Carusel2 />
+              <Carusel2>
+                {Products?.map((i) => (
+                  <Paad>
+                    <Card key={i.id} props={i} />
+                  </Paad>
+                ))}
+              </Carusel2>
             </TabPanel>
           </Tabs>
         </div>

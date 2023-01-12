@@ -2,6 +2,7 @@ import React from "react";
 import { img1, img2, img3 } from "../../assets/img/img";
 import Carusel from "./Carusel/Carusel";
 import Image2 from "./img2/Image";
+import Latest from "./LatestBlog/Latest";
 import Product from "./NewProdect/Product";
 import OurProduct from "./ourProducts/OurProducts";
 import Shipping from "./shipping/shipping";
@@ -16,6 +17,7 @@ export const Main = () => {
       <OurProduct />
       <Image2 />
       <Product />
+      {/* <Latest/> */}
     </>
   );
 };

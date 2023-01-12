@@ -21,7 +21,23 @@ const card5 = require("./card5.webp");
 const mac1 = require("./4.jpg.png");
 const mac2 = require("./6.jpg.png");
 const mac3 = require("./5.jpg.png");
+const new1 = require("./new1.png");
+const new2 = require("./new2.png");
+const new3 = require("./new3.png");
+const new4 = require("./new4.png");
+const latest1 = require("./latest1.png");
+const latest2 = require("./latest2.png");
+const latest3 = require("./latest3.png");
+const latest4 = require("./latest4.png");
 export {
+  latest1,
+  latest2,
+  latest3,
+  latest4,
+  new1,
+  new2,
+  new3,
+  new4,
   Logo,
   facebook,
   twitter,
