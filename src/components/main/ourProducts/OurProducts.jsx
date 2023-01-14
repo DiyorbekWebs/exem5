@@ -15,14 +15,15 @@ export const Title = styled.h1`
 `;
 export const Box = styled.div`
   padding: 30px 0px 30px 0px;
-  @media (max-width: 430px) {
-  }
 `;
 export const Content = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 15px;
+  @media (max-width:430px){
+    margin-bottom: 10px;
+  }
 `;
 export const Line = styled.div`
   height: 2px;
@@ -37,7 +38,10 @@ export const Paragrf = styled.p`
   line-height: 24px;
   color: #565656;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 0px;
+  @media (max-width: 430px) {
+    margin-bottom: 10px;
+  }
 `;
 export const Tabin = styled(Tab)`
   font-family: Poppins;
@@ -69,6 +73,19 @@ export const TabListt = styled(TabList)`
 export const TabPanell = styled(TabPanel)`
   display: block;
 `;
+const Pargarf2 = styled.p`
+  margin-bottom: 60px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #565656;
+  text-align: center;
+  @media (max-width: 430px) {
+    margin-bottom: 30px;
+  }
+`;
 export default function OurProduct() {
   return (
     <>
@@ -77,10 +94,10 @@ export default function OurProduct() {
           <Content>
             <Title>Our products</Title>
             <Line />
-            <Paragrf>
+            <Pargarf2>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Perspiciatis, culpa?
-            </Paragrf>
+            </Pargarf2>
           </Content>
           <Tabs>
             <TabListt>

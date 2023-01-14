@@ -29,7 +29,45 @@ const latest1 = require("./latest1.png");
 const latest2 = require("./latest2.png");
 const latest3 = require("./latest3.png");
 const latest4 = require("./latest4.png");
+const a1 = require("./carusel3 (1).png");
+const a2 = require("./carusel3 (2).png");
+const a3 = require("./carusel3 (3).png");
+const a4 = require("./carusel3 (4).png");
+const a5 = require("./carusel3 (5).png");
+const a6 = require("./carusel3 (6).png");
+const l1 = require("./logo/aaa.png");
+const l2 = require("./logo/Dove-Logo-2012-present.jpg");
+const l3 = require("./logo/download (1).png");
+const l4 = require("./logo/download (2).png");
+const l5 = require("./logo/download (3).png");
+const l6 = require("./logo/download (4).png");
+const l7 = require("./logo/download.jfif");
+const l8 = require("./logo/download.png");
+const l9 = require("./logo/images (1).jfif");
+const l10 = require("./logo/images (1).png");
+const l11 = require("./logo/images (2).png");
+const l12 = require("./logo/images.jfif");
+const bank = require("./bank.png");
 export {
+  bank,
+  l1,
+  l2,
+  l3,
+  l4,
+  l5,
+  l6,
+  l7,
+  l8,
+  l9,
+  l10,
+  l11,
+  l12,
+  a1,
+  a2,
+  a3,
+  a4,
+  a5,
+  a6,
   latest1,
   latest2,
   latest3,

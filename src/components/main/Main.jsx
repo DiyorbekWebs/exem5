@@ -1,6 +1,7 @@
 import React from "react";
 import { img1, img2, img3 } from "../../assets/img/img";
 import Carusel from "./Carusel/Carusel";
+import Carusel3 from "./carusel3/carusel3";
 import Image2 from "./img2/Image";
 import Latest from "./LatestBlog/Latest";
 import Product from "./NewProdect/Product";
@@ -17,7 +18,8 @@ export const Main = () => {
       <OurProduct />
       <Image2 />
       <Product />
-      {/* <Latest/> */}
+      <Latest/>
+      <Carusel3/>
     </>
   );
 };

@@ -46,23 +46,22 @@ const Img = styled.img`
   display: none;
 
   @media (max-width: 1281px) {
-    height: 257px;
+    height: 250px !important;
   }
   @media (max-width: 835px) {
     height: 200px;
   }
   @media (max-width: 770px) {
-    height: 230px;
   }
   @media (max-width: 430px) {
-    height: 350px;
+    height: 350px !important;
     margin: 0 auto;
   }
   @media (max-width: 380px) {
     height: 340px;
     margin: 0 auto;
   }
-  @media (max-width: 3610px) {
+  @media (max-width: 361px) {
     height: 330px;
     margin: 0 auto;
   }
@@ -80,15 +79,15 @@ const H1 = styled.h1`
     transition: 0.5s;
     color: #5a5ac9;
   }
- 
 `;
 const Texts = styled.div`
-  padding: 17px 20px 17px 20px;
+  padding: 17px 24px 17px 24px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   @media (max-width: 430px) {
     gap: 20px;
+    padding: 17px 30px 17px 30px;
   }
 `;
 const PriceBox = styled.div`
@@ -116,7 +115,7 @@ const Price = styled.div`
 
   @media (max-width: 430px) {
     font-size: 20px;
-}
+  }
 `;
 const Icon = styled.button`
   padding: 15px 15px;

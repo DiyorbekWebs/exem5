@@ -6,12 +6,14 @@ import { Main } from ".././components/main/Main";
 import Footer from "../components/footer/Footer";
 import styled from "styled-components";
 import Bottom from "../components/footer/FooterBottom/Bottom";
+import PageName from "../components/Cart Page/PageName";
+import Calculation from "../components/Cart-Items/Calculation";
 
 export const Ffoter = styled.footer`
   padding: 80px 0px 95px 0px;
   background-color: #efefef;
 `;
-export default function Layout() {
+export default function LayoutWishlist() {
   return (
     <>
       <header id="id" className={HeaderS.header}>
@@ -19,7 +21,8 @@ export default function Layout() {
         <Header />
       </header>
       <main>
-        <Main />
+        <PageName name="Wishlist"/>
+        <Calculation/>
       </main>
       <footer>
         <Footer />

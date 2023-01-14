@@ -1,17 +1,20 @@
 import React from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
-// import { Products } from "../../../config/base";
 import { Next, Prev } from "./Arrows";
-// import Card from "../../Card/Card";
 import "./index.css";
 const Sliderr = styled(Slider)`
   height: 460px;
   padding: 10px;
   width: 100%;
+  display: flex;
+  align-items: center;
 `;
 export const Paad = styled.div`
   margin-right: 30px;
+  @media (max-width: 430px) {
+    margin-top: 80px;
+  }
 `;
 export const Carusel2 = ({ children }) => {
   const settings = {

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { MdChevronRight, MdChevronLeft } from "react-icons/md";
 import "./index.css";
-const Divv = styled.div`
+export const Divv = styled.div`
   width: 50px;
   height: 50px;
   border-radius: 25px;
@@ -33,7 +33,7 @@ const Divv = styled.div`
     margin-top: 25%;
   }
 `;
-const Divv2 = styled.div`
+export const Divv2 = styled.div`
   width: 50px;
   height: 50px;
   border-radius: 25px;
