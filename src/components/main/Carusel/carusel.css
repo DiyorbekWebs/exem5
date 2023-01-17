@@ -44,8 +44,6 @@
   margin-bottom: 30px;
 }
 .fadeBox {
-  margin-top: -5%;
-  margin-left: 8%;
   display: flex;
   flex-direction: column;
   gap: 15px;

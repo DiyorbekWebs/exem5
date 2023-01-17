@@ -195,58 +195,61 @@ const ModalCart = ({ props }) => {
             <Tittle>Product successfully added to your shopping cart</Tittle>
             <Close onClick={() => dispatch(CloseFunc())} />
           </Top>
-          <Bottom>
-            {props?.map((i) => (
-              <>
-                <Box1 key={i.id}>
-                  <Img src={i.img} alt="img" />
-                  <Texts>
-                    <ProductName>{i.tittle}</ProductName>
-                    <Price>{i.price}</Price>
-                    <Feature>
-                      Dimension :: <Price>40x60cm</Price>
-                    </Feature>
-                    <Feature>
-                      Quantity :: <Price>1</Price>
-                    </Feature>
-                  </Texts>
-                </Box1>
+          {props?.map((i) => (
+            <Bottom key={i.id}>
+              <Box1>
+                <Img src={i.img} alt="img" />
+                <Texts>
+                  <ProductName>{i.tittle}</ProductName>
+                  <Price>{i.price}</Price>
+                  <Feature>
+                    Dimension :: <Price>40x60cm</Price>
+                  </Feature>
+                  <Feature>
+                    Quantity :: <Price>1</Price>
+                  </Feature>
+                </Texts>
+              </Box1>
 
-                <Box2>
-                  <Texts>
-                    <Text1>There is 1 item in your cart</Text1>
-                    <Feature>
-                      Total products :: <Price>$123.72</Price>
-                    </Feature>
-                    <Feature>
-                      Total shipping :: <Price> $7.00</Price>
-                    </Feature>
-                    <Feature>
-                      Taxes :: <Price>$0.00</Price>
-                    </Feature>
-                    <Feature>
-                      Total :: <Price>$130.72 (tax excl.)</Price>
-                    </Feature>
-                  </Texts>
-                  <Btns>
-                    <Link to={"/cart"}>
-                      <Button
-                        onclick={() => {
-                          props.forEach((i) => {
-                            dispatch(addElement(i));
-                          });
-                        }}
-                        clasS={btnStil.button2}
-                      >
-                        Continue Shopping
-                      </Button>
-                    </Link>
-                    <Button onclick={() => dispatch(CloseFunc())} clasS={btnStil.button2}>Proceed to checkout</Button>
-                  </Btns>
-                </Box2>
-              </>
-            ))}
-          </Bottom>
+              <Box2>
+                <Texts>
+                  <Text1>There is 1 item in your cart</Text1>
+                  <Feature>
+                    Total products :: <Price>$123.72</Price>
+                  </Feature>
+                  <Feature>
+                    Total shipping :: <Price> $7.00</Price>
+                  </Feature>
+                  <Feature>
+                    Taxes :: <Price>$0.00</Price>
+                  </Feature>
+                  <Feature>
+                    Total :: <Price>$130.72 (tax excl.)</Price>
+                  </Feature>
+                </Texts>
+                <Btns>
+                  <Link to={"/cart"}>
+                    <Button
+                      onclick={() => {
+                        props.forEach((i) => {
+                          dispatch(addElement(i));
+                        });
+                      }}
+                      clasS={btnStil.button2}
+                    >
+                      Continue Shopping
+                    </Button>
+                  </Link>
+                  <Button
+                    onclick={() => dispatch(CloseFunc())}
+                    clasS={btnStil.button2}
+                  >
+                    Proceed to checkout
+                  </Button>
+                </Btns>
+              </Box2>
+            </Bottom>
+          ))}
         </Content>
       </div>
     </Box>

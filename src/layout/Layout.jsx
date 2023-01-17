@@ -18,6 +18,7 @@ export default function Layout() {
         <HeaderTop />
         <Header />
       </header>
+
       <main>
         <Main />
       </main>

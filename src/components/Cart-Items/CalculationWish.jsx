@@ -126,8 +126,7 @@ const CalculationWish = () => {
                 <Th>action</Th>
                 <Th>Checkout</Th>
               </Tr>
-              {
-              wishlist?.map((item) => (
+              {wishlist?.map((item) => (
                 <>
                   <Tr2>
                     <td align="center">
@@ -167,7 +166,7 @@ const CalculationWish = () => {
                       </Count>
                     </td>
                     <td align="center">
-                      <Text>{item.price}</Text>
+                      <Text>${(item.price * value).toFixed(1)}</Text>
                     </td>
                     <td align="center">
                       <BsTrash

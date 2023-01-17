@@ -126,10 +126,9 @@ const Calculation = () => {
                 <Th>action</Th>
                 <Th>Checkout</Th>
               </Tr>
-              {
-              cart?.map((item) => (
-                <>
-                  <Tr2>
+              {cart?.map((item) => (
+                
+                  <Tr2 key={item.id}>
                     <td align="center">
                       <Img src={item.img} />
                     </td>
@@ -144,6 +143,7 @@ const Calculation = () => {
                         <Input
                           align="center"
                           type={"number"}
+                          disabled
                           value={value}
                           max={10}
                           step={2}
@@ -167,7 +167,7 @@ const Calculation = () => {
                       </Count>
                     </td>
                     <td align="center">
-                      <Text>{item.price}</Text>
+                      <Text>${(item.price*value).toFixed(1)}</Text>
                     </td>
                     <td align="center">
                       <BsTrash
@@ -181,7 +181,7 @@ const Calculation = () => {
                       <Button clasS={stil.button2}>add to cart</Button>
                     </td>
                   </Tr2>
-                </>
+                
               ))}
             </tbody>
           </Table>

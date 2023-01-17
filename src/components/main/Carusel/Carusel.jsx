@@ -35,6 +35,7 @@ const Carusel = () => {
   return (
     <Sliderr {...settings}>
       <div className="slidee slide1">
+        <div className="container">
         <div className="fadeBox">
           <Fade left>
             <h1 className={"fade1"}>Runway Lip Pal;</h1>
@@ -48,8 +49,10 @@ const Carusel = () => {
             </div>
           </Fade>
         </div>
+        </div>
       </div>
       <div className="slidee slide2">
+        <div className="container">
         <div className="fadeBox">
           <Fade left>
             <h1 className={"fade1"}>Face Makeup Brush</h1>
@@ -63,8 +66,11 @@ const Carusel = () => {
             </div>
           </Fade>
         </div>
+        </div>
       </div>
       <div className="slidee slide3">
+      <div className="container">
+
         <div className="fadeBox">
           <Fade left>
             <h1 className={"fade1"}>MORNEVA</h1>
@@ -77,6 +83,7 @@ const Carusel = () => {
               <Button clasS={stil.button3}>Shop Now</Button>
             </div>
           </Fade>
+        </div>
         </div>
       </div>
     </Sliderr>

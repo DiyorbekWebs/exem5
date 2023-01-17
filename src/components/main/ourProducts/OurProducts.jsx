@@ -114,8 +114,8 @@ export default function OurProduct() {
             <TabPanell>
               <Carusel2>
                 {Products?.map((i) => (
-                  <Paad>
-                    <Card key={i.id} props={i} />
+                  <Paad key={i.id}>
+                    <Card  props={i} />
                   </Paad>
                 ))}
               </Carusel2>
@@ -123,8 +123,8 @@ export default function OurProduct() {
             <TabPanel>
               <Carusel2>
                 {Products?.map((i) => (
-                  <Paad>
-                    <Card key={i.id} props={i} />
+                  <Paad key={i.id}>
+                    <Card  props={i} />
                   </Paad>
                 ))}
               </Carusel2>
@@ -132,8 +132,8 @@ export default function OurProduct() {
             <TabPanel>
               <Carusel2>
                 {Products?.map((i) => (
-                  <Paad>
-                    <Card key={i.id} props={i} />
+                  <Paad key={i.id}>
+                    <Card  props={i} />
                   </Paad>
                 ))}
               </Carusel2>

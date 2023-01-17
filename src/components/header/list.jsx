@@ -12,7 +12,7 @@ export default function List() {
             style={{
               padding: "10px",
               border: "1px solid transparent",
-              borderBottomColor: "grey",
+              borderBottomColor: "#e3e3e3",
             }}
           >
             <p className={style.header__item}>Home 1</p>
@@ -30,7 +30,7 @@ export default function List() {
             style={{
               padding: "10px",
               border: "1px solid transparent",
-              borderBottomColor: "grey",
+              borderBottomColor: "#e3e3e3",
             }}
           >
             <p className={style.header__item}>About Page</p>
@@ -40,7 +40,7 @@ export default function List() {
             style={{
               padding: "10px",
               border: "1px solid transparent",
-              borderBottomColor: "grey",
+              borderBottomColor: "#e3e3e3",
             }}
           >
             <p className={style.header__item}>Card Page</p>
@@ -50,7 +50,7 @@ export default function List() {
             style={{
               padding: "10px",
               border: "1px solid transparent",
-              borderBottomColor: "grey",
+              borderBottomColor: "#e3e3e3",
             }}
           >
             <p className={style.header__item}>Chekout Page</p>
@@ -60,7 +60,7 @@ export default function List() {
             style={{
               padding: "10px",
               border: "1px solid transparent",
-              borderBottomColor: "grey",
+              borderBottomColor: "#e3e3e3",
             }}
           >
             <p className={style.header__item}>Register Page</p>
@@ -79,7 +79,7 @@ export default function List() {
             style={{
               padding: "10px",
               border: "1px solid transparent",
-              borderBottomColor: "grey",
+              borderBottomColor: "#e3e3e3",
             }}
           >
             <p className={style.header__item}>About Page</p>
@@ -89,7 +89,7 @@ export default function List() {
             style={{
               padding: "10px",
               border: "1px solid transparent",
-              borderBottomColor: "grey",
+              borderBottomColor: "#e3e3e3",
             }}
           >
             <p className={style.header__item}>Card Page</p>
@@ -99,7 +99,7 @@ export default function List() {
             style={{
               padding: "10px",
               border: "1px solid transparent",
-              borderBottomColor: "grey",
+              borderBottomColor: "#e3e3e3",
             }}
           >
             <p className={style.header__item}>Chekout Page</p>
@@ -109,7 +109,7 @@ export default function List() {
             style={{
               padding: "10px",
               border: "1px solid transparent",
-              borderBottomColor: "grey",
+              borderBottomColor: "#e3e3e3",
             }}
           >
             <p className={style.header__item}>Register Page</p>
@@ -127,7 +127,7 @@ export default function List() {
             style={{
               padding: "10px",
               border: "1px solid transparent",
-              borderBottomColor: "grey",
+              borderBottomColor: "#e3e3e3",
             }}
           >
             <p className={style.header__item}>Blog Grid</p>
@@ -137,7 +137,7 @@ export default function List() {
             style={{
               padding: "10px",
               border: "1px solid transparent",
-              borderBottomColor: "grey",
+              borderBottomColor: "#e3e3e3",
             }}
           >
             <p className={style.header__item}>Blog List</p>
