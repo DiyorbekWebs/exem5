@@ -1,6 +1,7 @@
 import React from "react";
 import { CgClose } from "react-icons/cg";
 import style from "./responsive.module.scss";
+import { Link } from "react-router-dom";
 import {
   AiOutlineHeart,
   BsBag,
@@ -13,6 +14,10 @@ import {
   twitter,
   youtube,
 } from "../../../../assets/img/img";
+import styled from "styled-components";
+const Linkk = styled(Link)`
+  color: #000;
+`;
 const Responsive = ({ props }) => {
   console.log(props);
   return (
@@ -31,14 +36,18 @@ const Responsive = ({ props }) => {
               <BsShuffle className={style.modal__icon1} />
               Compare
             </li>
-            <li className={style.modal__item}>
-              <AiOutlineHeart className={style.modal__icon1} />
-              Wishlist
-            </li>
-            <li className={style.modal__item}>
-              <BsBag className={style.modal__icon1} />
-              Shopping Cart
-            </li>
+            <Linkk to={"/wishlist"}>
+              <li className={style.modal__item}>
+                <AiOutlineHeart className={style.modal__icon1} />
+                Wishlist
+              </li>
+            </Linkk>
+            <Linkk to={"/cart"}>
+              <li className={style.modal__item}>
+                <BsBag className={style.modal__icon1} />
+                Shopping Cart
+              </li>
+            </Linkk>
           </ul>
           <ul className={style.modal__list2}>
             <li className={style.modal__item2}>
