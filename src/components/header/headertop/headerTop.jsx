@@ -20,7 +20,6 @@ const HeaderTop = () => {
               <BsTelephoneOutbound /> (+123)4567890
             </h4>
           </div>
-          {/* <List/> */}
           <div className={style.HeaderTop__right}>
             <select className={style.HeaderTop__select}>
               <option className={style.HeaderTop__option} disabled value={'Setting'} >

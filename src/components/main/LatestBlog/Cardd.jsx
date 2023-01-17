@@ -115,7 +115,6 @@ const Cardd = ({props}) => {
   return (
     <Box>
       <Img src={props.img} />
-
       <Text>
         <Brend>{props.text1}</Brend>
         <Titlee>{props.titlle}</Titlee>

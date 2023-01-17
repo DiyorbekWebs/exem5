@@ -1,5 +1,5 @@
 import React from "react";
-import { Content, Line, Paragrf, Title } from "../ourProducts/OurProducts";
+import { Content, Line, Paragrf } from "../ourProducts/OurProducts";
 import { ImageGallery } from "../../../config/base";
 import Cardd from "./Cardd";
 import styled from "styled-components";
@@ -19,7 +19,14 @@ const Sliderr = styled(Slider)`
   padding: 10px;
   width: 100%;
 `;
-
+const Title = styled.h1`
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+`;
 const Latest = () => {
   const settings = {
     infinite: false,
@@ -76,7 +83,7 @@ const Latest = () => {
             </Paragrf>
             <Sliderr {...settings}>
               {ImageGallery?.map((i) => (
-                <Cardd props={i} />
+                <Cardd key={i.id} props={i} />
               ))}
             </Sliderr>
           </Content>

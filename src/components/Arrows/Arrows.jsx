@@ -43,11 +43,11 @@ export const Divv2 = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  z-index: 1;
   top: 0;
   left: 0;
   margin-top: 25%;
   margin-left: 1%;
+  z-index: 1;
 
   &:hover {
     transition: 0.5s;

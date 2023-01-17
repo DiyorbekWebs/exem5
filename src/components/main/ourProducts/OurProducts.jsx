@@ -5,14 +5,10 @@ import "react-tabs/style/react-tabs.css";
 import { Carusel2, Paad } from "../responsCarusel/Carusel";
 import { Products } from "../../../config/base";
 import Card from "../../Card/Card";
-export const Title = styled.h1`
-  font-family: Raleway;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 38px;
-  letter-spacing: 0em;
-  text-align: center;
-`;
+import { useSelector } from "react-redux";
+import ModalCart from "../Modal/ModalCart";
+import { getInfor } from "../../../config/information";
+
 export const Box = styled.div`
   padding: 30px 0px 30px 0px;
 `;
@@ -21,7 +17,7 @@ export const Content = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 15px;
-  @media (max-width:430px){
+  @media (max-width: 430px) {
     margin-bottom: 10px;
   }
 `;
@@ -86,7 +82,17 @@ const Pargarf2 = styled.p`
     margin-bottom: 30px;
   }
 `;
+ const Title = styled.h1`
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+`;
 export default function OurProduct() {
+  const modal1 = useSelector((state) => state.modal.value);
+  const { info } = useSelector(getInfor);
   return (
     <>
       <Box>
@@ -133,6 +139,7 @@ export default function OurProduct() {
               </Carusel2>
             </TabPanel>
           </Tabs>
+          {modal1 ? <ModalCart props={info} /> : null}
         </div>
       </Box>
     </>

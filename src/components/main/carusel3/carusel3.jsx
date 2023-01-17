@@ -15,7 +15,6 @@ import {
   l8,
   l9,
 } from "../../../assets/img/img";
-/////////////////////////////////
 import { MdChevronRight, MdChevronLeft } from "react-icons/md";
 const Divv = styled.div`
   width: 50px;
@@ -93,7 +92,6 @@ export function Prev(props, { stle }) {
   );
 }
 
-////////////////////////
 const Box = styled.div`
   padding: 30px;
 `;

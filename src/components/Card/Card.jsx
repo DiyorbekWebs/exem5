@@ -6,6 +6,11 @@ import "./card.css";
 import { AiOutlineHeart } from "react-icons/ai";
 import Zoom from "react-reveal/Zoom";
 import { BsSearch, BsShuffle } from "react-icons/bs";
+import { OpenFunc } from "../../config/modal";
+import { useDispatch } from "react-redux";
+import { getInformation } from "../../config/information";
+import { addElement } from "../../config/wishlist";
+
 const Box = styled.div`
   display: flex;
   flex-direction: column;
@@ -155,13 +160,18 @@ const HoverICon = styled.div`
   }
 `;
 export default function Card({ props }) {
+  const dispatch = useDispatch();
   return (
     <>
       <Box className={"box"}>
         <Img src={props.img} />
         <HoverICon className={"iconHover"}>
           <Zoom>
-            <Icon>
+            <Icon
+              onClick={() => {
+                dispatch(addElement(props));
+              }}
+            >
               <AiOutlineHeart />
             </Icon>
           </Zoom>
@@ -181,7 +191,12 @@ export default function Card({ props }) {
           <ReactStars count={5} value={5} size={24} activeColor="#ffd700" />
           <PriceBox>
             <Price>{props.price}</Price>
-            <Icon>
+            <Icon
+              onClick={() => {
+                dispatch(OpenFunc());
+                dispatch(getInformation(props));
+              }}
+            >
               <AiOutlineShoppingCar />
             </Icon>
           </PriceBox>

@@ -177,7 +177,7 @@ const Img3 = styled.img`
   }
 `;
 
-export default function Image2() {
+export const Image2 = () => {
   return (
     <ImgMain>
       <div className="container">
@@ -189,4 +189,4 @@ export default function Image2() {
       </div>
     </ImgMain>
   );
-}
+};

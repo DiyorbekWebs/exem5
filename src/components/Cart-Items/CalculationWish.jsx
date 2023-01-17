@@ -6,8 +6,8 @@ import stil from "../Button/button.module.scss";
 import "./index.css";
 import { CgChevronDown, CgChevronUp } from "react-icons/cg";
 import { useDispatch, useSelector } from "react-redux";
-import { addElem, deleteTodo } from "../../config/cart";
 import { count, decrement, increment } from "../../config/counter";
+import { addElem, deleteTodo } from "../../config/wishlist";
 const Box = styled.div`
   background-color: #fff;
   padding: 55px 0px;
@@ -105,8 +105,8 @@ const Title = styled.h1`
   letter-spacing: 0em;
   text-align: center;
 `;
-const Calculation = () => {
-  const { cart } = useSelector(addElem);
+const CalculationWish = () => {
+  const { wishlist } = useSelector(addElem);
   const dispatch = useDispatch();
   const { value } = useSelector(count);
 
@@ -127,7 +127,7 @@ const Calculation = () => {
                 <Th>Checkout</Th>
               </Tr>
               {
-              cart?.map((item) => (
+              wishlist?.map((item) => (
                 <>
                   <Tr2>
                     <td align="center">
@@ -191,4 +191,4 @@ const Calculation = () => {
   );
 };
 
-export default Calculation;
+export default CalculationWish;

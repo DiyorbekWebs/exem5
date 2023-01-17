@@ -1,10 +1,6 @@
 import React from "react";
 import { Sling as Hamburger } from "hamburger-react";
-import {
-  AiOutlineHeart,
-  BsSearch,
-  BsShuffle,
-} from "../../assets/icons/icon";
+import { AiOutlineHeart, BsSearch, BsShuffle } from "../../assets/icons/icon";
 import Logo from "../../assets/img/logo";
 import style from "./header.module.scss";
 import List from "./list";
@@ -12,8 +8,6 @@ import WishlistModal from "./modal/modal";
 import useModal from "../../hooks/useModal";
 import CartModal from "./modal/Cart/Cart";
 import Responsive from "./modal/ResponsiveModal/Responsive.jsx";
-// import HeaderModal from "./modal/headerModal";
-
 export default function Header() {
   const { isOpen, openModal, closeModal } = useModal();
   const {
@@ -29,7 +23,6 @@ export default function Header() {
           <div className={style.header__logo}>
             <Logo />
           </div>
-          {/*Todo: logo*/}
           <List />
           <div className={style.header__tablet}>
             <ul className={style.header__icons}>
@@ -39,7 +32,7 @@ export default function Header() {
                 className={style.header__icon}
                 onClick={() => openModal()}
               />
-              {isOpen ? <WishlistModal props={closeModal} /> : ""}
+              {isOpen ? <WishlistModal props={closeModal} /> : null}
               <CartModal />
             </ul>
             <div
@@ -49,9 +42,16 @@ export default function Header() {
                 console.log(second);
               }}
             >
-              <Hamburger toggled={second} toggle={secondModal} rounded size={25} direction={"left"} duration={1} />
+              <Hamburger
+                toggled={second}
+                toggle={secondModal}
+                rounded
+                size={25}
+                direction={"left"}
+                duration={1}
+              />
             </div>
-            {second ? <Responsive props={closedModal}/> : ""}
+            {second ? <Responsive props={closedModal} /> : null}
           </div>
         </nav>
       </div>

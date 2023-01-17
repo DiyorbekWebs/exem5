@@ -1,11 +1,9 @@
 import React from "react";
 import { BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 import { CgFacebook } from "react-icons/cg";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "../../assets/img/logo";
 import { Ffoter } from "../../layout/Layout";
-import Header from "../header/Header";
 import { Line } from "../main/ourProducts/OurProducts";
 const Content = styled.div`
   display: flex;
@@ -115,7 +113,6 @@ const InputBox = styled.div`
   border-top-left-radius: 20px;
   @media (max-width: 380px) {
     gap: 10px !important;
-    background-color: red;
   }
 `;
 const Input = styled.input`
@@ -229,8 +226,6 @@ export default function Footer() {
               </List>
             </Part2>
           </PartOne>
-          {/* ////////////////////////////////////////////////////// */}
-          {/* ////////////////////////////////////////////////////// */}
           <PartTwo>
             <Part2>
               <Title>Social Links</Title>

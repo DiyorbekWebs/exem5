@@ -5,9 +5,13 @@ import ModalCard from "../modalCard";
 import { BsBag } from "react-icons/bs";
 import useModal from "../../../../hooks/useModal";
 import Button from "../../../Button/Button";
-import stil from '../../../Button/button.module.scss'
-export default function CartModal({ props }) {
+import stil from "../../../Button/button.module.scss";
+import { Link } from "react-router-dom";
+import { addElem, deleteTodo } from "../../../../config/cart";
+import { useSelector } from "react-redux";
+export default function CartModal() {
   const { isOpen, openModal, closeModal } = useModal();
+  const { cart } = useSelector(addElem);
 
   return (
     <>
@@ -23,11 +27,15 @@ export default function CartModal({ props }) {
               />
             </div>
             <ul className={stylee.modal__cardList}>
-              <ModalCard />
-              <ModalCard />
-              <ModalCard />
+              {cart?.map((i) => (
+                <ModalCard key={i.id} func={deleteTodo} props={i} />
+              ))}
             </ul>
-            <Button clasS={stil.button} style={{marginRight: '10px'}}>view cart</Button>
+            <Link to={"/cart"}>
+              <Button clasS={stil.button} style={{ marginRight: "10px" }}>
+                view cart
+              </Button>
+            </Link>
             <Button clasS={stil.button2}>Checkout</Button>
           </div>
         </div>
