@@ -18,7 +18,7 @@ export const Products = [
   {
     img: card1,
     titlle: "All Natural Makeup Beauty Cosmetics",
-    price: "$11.90",
+    price: 11.90,
     id: 1,
   },
   {
@@ -48,28 +48,28 @@ export const Products = [
   {
     img: new1,
     titlle: "All Natural Makeup Beauty Cosmetics",
-    price: "$11.90",
+    price: 11.90,
     category: "new",
     id: 6,
   },
   {
     img: new2,
     titlle: "On Trend Makeup and Beauty Cosmetics",
-    price: "$11.90",
+    price: 11.90,
     category: "new",
     id: 7,
   },
   {
     img: new3,
     titlle: "The Cosmetics and Beauty brand Shoppe",
-    price: "$21.51",
+    price: 21.51,
     category: "new",
     id: 9,
   },
   {
     img: new4,
     titlle: "orginal Age Defying Cosmetics Makeup",
-    price: "$11.90",
+    price: 11.90,
     category: "new",
     id: 10,
   },
